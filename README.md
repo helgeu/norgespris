@@ -5,6 +5,15 @@ Analyze Norgespris (NOK0.50 vs 90% of above NOK0.9375 per KWH)
 
 Dump your files from Elhub after login at: https://elhub.no/elhub-for-sluttbruker/minside/ to root folder and just run the code in the fsx-file.
 
+fsx-file may need changes if in other than NO1 in [line 105](https://github.com/helgeu/norgespris/blob/7da2f1dce115139c71ae20e99fafcaaa63954da1/PowerPrices.fsx#L105C9-L105C47)
+
+```fsharp
+    let key = makeSetKey "NO1" c.From c.To
+```
+
+Replace "NO1" with "NO2", "NO3" or "NO4".
+
+
 
 ## Personal results
 
